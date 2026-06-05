@@ -32,7 +32,7 @@ export class Calculator {
     // a calculation based off of which operator was determined in chooseOperator()
     // then stores the result in currentInput
     public compute(): void {
-        let computation: number;
+        let computation: number = 0;
         const prev = parseFloat(this.previousInput);
         const current = parseFloat(this.currentInput);
         if (isNaN(prev) || isNaN(current)) return;
