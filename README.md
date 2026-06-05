@@ -44,3 +44,5 @@ It allowed me to keep a constant preview of my app open up at all times by runni
 I found destructuring and closures to be the most useful. Destructuring allowed me to call specfic functions from inside the Calculator class such as the button logic in the ```buttons.ts``` file.
 Closures came in handy in the Calculator class itself. I was able to reference different variable values and keep a running tally throughout the scope of the class. This allowed for the app to keep track of varables such as currentInput across different class methods.
 
+## Repo Author:
+Josh Gaudet/iltStudent07
