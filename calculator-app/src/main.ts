@@ -16,6 +16,8 @@ document.getElementById('buttons')!.addEventListener('click', (event) => {
     calculator.compute();
   } else if (target.classList.contains('clear')) {
     calculator.clear();
+  } else if (target.classList.contains('decimal')) {
+    calculator.handleDecimal();
   }
 });
 

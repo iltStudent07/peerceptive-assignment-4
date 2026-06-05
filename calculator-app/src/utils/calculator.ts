@@ -4,6 +4,7 @@ export class Calculator {
     private currentInput: string = '';
     private previousInput: string = '';
     private operator: Operator | null = null;
+    private hasDecimal: boolean = false;
     // Adjusts the value of the number variable by taking whatever value is stored
     // in currentInput
     public appendNumber(number: string): void {
@@ -25,6 +26,7 @@ export class Calculator {
         this.operator = operator;
         this.previousInput = this.currentInput;
         this.currentInput = '';
+        this.hasDecimal = false;
     }
     // Takes the two values stored in previousInput and currentInput and performs
     // a calculation based off of which operator was determined in chooseOperator()
@@ -70,6 +72,16 @@ export class Calculator {
         this.currentInput = '';
         this.previousInput = '';
         this.operator = null;
+        this.hasDecimal = false;
         this.updateDisplay();
+    }
+
+    // Checks to see if the currentInput already has a decimal and adds one if it
+    // doesn't. This is called when the user clicks the decimal button
+    public handleDecimal(): void {
+        if(!this.hasDecimal) {
+            this.currentInput += '.';
+            this.hasDecimal = true;
+        }
     }
 }
