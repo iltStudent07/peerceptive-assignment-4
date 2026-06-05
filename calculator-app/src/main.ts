@@ -1,6 +1,6 @@
 import './style.css'
 import { type Operator } from '@/types/types'
-import { Calculator } from '@/utils/calculator.js'
+import { Calculator } from '@/components/calculator.js'
 
 
 // creates a new instance of calculator and waits for a click event to update
