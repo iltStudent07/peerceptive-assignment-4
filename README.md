@@ -10,7 +10,8 @@ If you would like to run/test this app for yourself:
 2. Open the file folder in a code editor of your choosing (I recommend VS Code)
 3. If you don't have Node.js you will need to install it by going to www.nodejs.org
 4. Once you have installed everything you can confirm it is installed correctly by opening a terminal in your code editor and type: ```node -v```, if it returns a version number you are good to go!
-5. From there you can type in the terminal: ```npm run dev``` to run the app in a dev server or you can type: ```npm run build``` and then ```npm run preview``` to build a production build of the app and preview it.
+5. Install dependencies by typing ```npm install``` into the terminal.
+6. From there you can type in the terminal: ```npm run dev``` to run the app in a dev server or you can type: ```npm run build``` and then ```npm run preview``` to build a production build of the app and preview it.
 
 
 ## Project Explanation:
